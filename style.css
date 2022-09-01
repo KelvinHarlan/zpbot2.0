@@ -1,0 +1,329 @@
+*{
+    font-family: sans-serif;
+}
+html {
+    scroll-behavior: smooth;
+  }
+body {
+    background-color: rgb(41, 41, 41);
+    color: white;
+}
+
+@media(max-width: 768px){
+    body {
+        background-color: rgb(41, 41, 41);
+        display: flex;
+        align-items: center;
+        width: 98vw;
+        height: auto;
+        margin: 1vw;
+    }
+
+    .logo{
+        max-width: 90vw !important;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .logo img{
+        max-width: 40vw !important;
+        margin-bottom: 5vh;
+    }
+
+    .aviso{
+        display: block;
+        border: 1px solid #8a8a8a;
+        width: 90vw;
+        height: auto;
+        margin: 1vh;
+        border-radius: 5px;
+    }
+
+    
+    .aviso label{
+        font-size: 0.7rem;
+        display: block;
+        
+        margin: 3vw;
+    }
+    .aviso h4{
+        margin-left: 10px;
+        text-align:start;
+        display: block;
+        color: rgb(0, 255, 0);
+    }
+
+    .container{
+
+        display: flex;
+        align-items: center;
+        padding: 0;
+        flex-direction: column;
+        width: 100vw;
+        height: auto;
+        margin-top: 5vh;
+        margin-bottom: 10vh !important;
+       
+    
+    }
+
+    input{
+        width: 90vw;
+        height: 7vh;
+        margin: 1vh;
+        border-radius: 5px;
+        
+    }
+
+    .quantidades{
+        display: inline-block;
+        width: 90vw;
+        align-items: center;
+        
+
+    }
+
+    .quantidades div{
+        display: flex;
+        flex-direction: row;
+        justify-content:flex-start;
+        align-items: center;
+        text-align: start;
+        border: 1px solid #80808080;
+        margin: 1vh 0;
+    }
+
+    .qtd-total ,.qtd-restantes{
+        margin: 3vh;
+        background-color: #7a7a7a;
+        padding: 2vw;
+        border-radius: 5px;
+    }
+
+    .inpt-mensagens textarea{
+        min-width: 88vw;
+        max-width: 88vw;
+        max-height: 30vh;
+        min-height: 30vh;
+        border-radius: 5px;
+        height: 20vh;
+        margin-top: 2vh;
+        padding: 2vw;
+    }
+
+    .btn{
+        color: #ffffff;
+        width: 90vw;
+        height: 10vh;
+        border-radius: 5px;
+        font-weight: 600;
+        background-color: #7a7a7a;
+        border: qpx solid #80808080;
+        margin-top: 10vh;
+
+    }
+    .btn:hover{
+        background-color:#b3b3b380 ;
+    }
+
+    .btn:active{
+        background-color: #acacac;
+    }
+
+
+    .btn-copy{
+        color: #ffffff;
+        width: 90vw;
+        height: 10vh;
+        border-radius: 5px;
+        font-weight: 600;
+        background-color: #7a7a7a;
+        border: qpx solid #80808080;
+        margin-top: 3vh;
+
+    }
+
+
+    .btn-colar{
+        margin-top:3vh !important;
+
+    }
+    .btn-copy:hover{
+        background-color:#b3b3b380 ;
+    }
+
+    .btn-copy:active{
+        background-color: #008015;
+    }
+
+
+    /* inicio do input*/
+    body{
+        font-family: sans-serif;
+      }
+      
+      .label-float{
+        position: relative;
+        padding-top: 13px;
+      }
+      
+      .label-float input{
+        border: 1px solid #80808080;
+        border-radius: 5px;
+        outline: none;
+        font-size: 16px;
+        transition: all .1s linear;
+        -webkit-transition: all .1s linear;
+        -moz-transition: all .1s linear;
+        -webkit-appearance:none;
+      }
+      
+      .label-float input:focus{
+        border: 2px solid #3951b2;
+      }
+      
+      .label-float input::placeholder{
+        color:transparent;
+      }
+      
+      .label-float label{
+        pointer-events: none;
+        position: absolute;
+        top: calc(50% - 8px);
+        left: 15px;
+        transition: all .1s linear;
+        -webkit-transition: all .1s linear;
+        -moz-transition: all .1s linear;
+        background-color:transparent;
+        color: #ffffff;
+        padding: 5px;
+        box-sizing: border-box;
+      }
+      
+      .label-float input:required:invalid + label{
+        color: #7a7a7a;
+      }
+      .label-float input:focus:required:invalid{
+        border: 2px solid #80808080;
+      }
+      
+      .label-float input:focus + label,
+      .label-float input:not(:placeholder-shown) + label{
+        font-size: 13px;
+        top: 0;
+        color: #3951b2;
+      }
+
+    
+
+
+
+
+
+
+
+
+
+
+}
+
+
+
+@media(min-width: 768px){
+    body {
+        background-color: rgb(41, 41, 41);
+        display: flex;
+        align-items: center;
+        width: 98vw;
+        height: auto;
+        margin: 1vw;
+    }
+
+    .container{
+        display: flex;
+        align-items: center;
+
+        padding: 0;
+        flex-direction: column;
+        width: 100vw;
+        margin-top: 20vh;
+    }
+
+    input{
+        width: 90vw;
+        height: 7vh;
+        margin: 1vh;
+        border-radius: 5px;
+        
+    }
+
+    .quantidades{
+        display: flex;
+        flex-direction: row;
+        align-self: flex-start;
+        margin-left: 3vw;
+        width: 70vw;
+        align-items: center;
+
+    }
+
+    label{
+        display:inline-block;
+        flex-direction: row;
+        width: 10%;
+        margin: 1vw;
+    }
+    .qtd-total ,.qtd-restantes{
+        display: inline-block;
+        margin: 1vh;
+        background-color: rgb(122, 122, 122);
+        padding: 2vw;
+        border-radius: 5px;
+    }
+
+
+    .btn{
+        width: 40vw;
+        height: 10vh;
+        border-radius: 5px;
+        margin-top: 5vh;
+        font-size: 1.5rem;
+    }
+
+    .btn:hover{
+        background-color: yellowgreen;
+        color: white;
+    }
+
+    .btn:active{
+        background-color: green;
+        color: white;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
