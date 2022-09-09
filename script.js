@@ -8,12 +8,36 @@ let inputNumeros = document.querySelector('.inpt-numeros input').value;
 let fim = document.querySelector('.inpt-final').value;
 let quantidadeTotal = document.querySelector('.qtd-total');
 let quantidadeRestantes = document.querySelector('.qtd-restantes');
+let restam = document.querySelector('.restam')
 let mensagem = document.querySelector('.inpt-mensagens textarea').value;
 let textAviso = document.querySelector('.text-aviso');
     numeros3 = inputNumeros.replaceAll(' ', '');
     numeros3 = numeros3.replaceAll('-', '');
     numeros3 = numeros3.replaceAll('+', '');
     numeros3 = numeros3.split(',');
+    
+    let arr = numeros3;
+    numeros3 = arr.filter((este, i) => arr.indexOf(este) === i);
+    numeros4 = []
+ 
+
+    for(i = 0; i < numeros3.length; i++){
+        
+        if(numeros3[i].slice(0,2) === '55'){
+            numeros4.push(numeros3[i]);
+            
+           
+        }
+      
+        
+    }
+    
+    numeros3 = numeros4
+   
+
+
+
+
 let mensagemFiltrada = window.encodeURIComponent(mensagem);
 
 if (fim === '' || inputNumeros === ''){
@@ -32,7 +56,10 @@ if (parseInt(fim) !== contador){
     contador += 1;
    
     quantidadeRestantes.innerHTML = numeros3.length - contador;
-     
+    localStorage.qtdRestante = (numeros3.slice(numeros3.length - (numeros3.length-contador)));
+    restam.innerText = numeros3.length - contador;
+  
+    
 }
 else{
     

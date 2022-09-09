@@ -18,6 +18,18 @@ body {
         height: auto;
         margin: 1vw;
     }
+    .restam{
+        padding: 1vh;
+        display: flex;
+        position: fixed;
+        border-radius: 5px;
+        background-color: black;
+        margin-left: 80vw;
+        text-align: center;
+        font-weight: 600;
+        border: 0.5px solid #8a8a8a;
+
+    }
 
     .logo{
         max-width: 90vw !important;
