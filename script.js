@@ -23,7 +23,7 @@ let textAviso = document.querySelector('.text-aviso');
 
     for(i = 0; i < numeros3.length; i++){
         
-        if(numeros3[i].slice(0,2) === '55'){
+        if(numeros3[i].slice(0,2) === '55' && numeros3[i].slice(4,5) !== '3'){
             numeros4.push(numeros3[i]);
             
            
